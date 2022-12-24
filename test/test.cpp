@@ -1,16 +1,15 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-    int x = 0;
-    cout << "enter a number" << endl;
-    cin >> x;
-    int y[x] = {};
+int main() {
+    int x[] = {1, 2, 3, 4, 55, 6, 45, 56786};
+    int n = sizeof(x) / sizeof(int);
+    int l = 0;
+    while (l<n)
 
-    for (int i = 0; i < x; i++)
     {
-        cin >> y[i];
+        cout << "x[" << l<< "]"
+             << " is " << x[l] << endl;
+        l++;
     }
-
     return 0;
 }
